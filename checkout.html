@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <title>Get your Personal Face Yoga Plan</title>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WGPPJJB');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="overflow">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGPPJJB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+        <header data-scroll-header class="header">
+            <div class="header__wrapper">
+                <img src="img/logo.png" alt="" class="header__logo">
+
+                <div class="header__item item-header">
+                    <h2 class="item-header__title">Your offer expires in</h2>
+                    <div class="item-header__timer header-timer">
+                        <div class="header-timer__item">
+                            <div class="header-min"></div>
+                            <p>minutes</p>
+                        </div>
+                        <span class="header-timer__point">:</span>
+                        <div class="header-timer__item">
+                            <div class="header-sec"></div>
+                            <p>seconds</p>
+                        </div>
+                    </div>
+                    <button class="item-header__btn checkout-btn scroll-btn">
+                        <p>GET MY PLAN</p>
+                        <svg class="btn_arrow">
+                            <use xlink:href="#btn_arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <section class="checkout">
+            <div class="personal">
+                <div class="personal__item item-personal">
+                    <img class="item-personal__logo" src="img/logo.png" alt="">
+                    <h2 class="item-personal__text"><span>GET YOUR PERSONALIZED</span> <br> FACE YOGA PLAN</h2>
+                    <div class="item-personal__block">
+                        <button class="item-personal__btn checkout-btn scroll-btn">
+                            <p>claim my plan</p>
+                            <svg class="btn_arrow">
+                                <use xlink:href="#btn_arrow"></use>
+                            </svg>
+                        </button>
+                        <div class="item-personal__view">
+                            <div class="item-personal__svg">
+                                <svg>
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                                <svg>
+                                    <use xlink:href="#star"></use>
+                                </svg>
+                            </div>
+
+                            <p>
+                                Join over <br> <span>10,000,000</span> members <br> of Skin Restart family
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="programm">
+                <div class="programm__wrapper">
+                    <h3 class="dynamic-programm__title">WHAT YOU WILL GET</h3>
+                    <h3 class="dynamic-programm__subtitle">Personalized face yoga program <span>tailored to your problem
+                            areas</span> </h3>
+                    <div class="programm__dynamic dynamic-programm">
+                        <div class="programm-img">
+                            <img src="img/neck.png" alt="neck">
+                            <p class="programm-img__text">neck</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="programm__progress progress-programm">
+                    <h3 class="progress-programm__title">Based on your answers <span> we rated <br> your skin
+                            tonus level</span> on 100 points scale</h3>
+
+                    <div class="progress">
+                        <div class="progress__item item-progress">
+                            <svg class="item-progress__circle circle" viewbox="0 0 33.83098862 33.83098862" width="160"
+                                height="160" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="circle__background" stroke="#E7EDF5" stroke-width="2" fill="none"
+                                    cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                <circle class="circle__line" stroke="#494C7F" stroke-width="2" stroke-dasharray="0,100"
+                                    stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431"
+                                    r="15.91549431" />
+                                <g class="circle__text">
+                                    <text class="circle__percent" x="16.91549431" y="15.5" alignment-baseline="central"
+                                        text-anchor="middle" font-size="10" font-weight="600" fill="#494C7F">46</text>
+                                </g>
+                            </svg>
+                            <p>Your <br> skin tonus <br> points <span>now</span> </p>
+                        </div>
+                        <div class="progress__item item-progress">
+                            <svg class="item-progress__circle circle" viewbox="0 0 33.83098862 33.83098862" width="160"
+                                height="160" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="circle__background" stroke="#E7EDF5" stroke-width="2" fill="none"
+                                    cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                <circle class="circle__line" stroke="#E68B8C" stroke-width="2" stroke-dasharray="0,100"
+                                    stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431"
+                                    r="15.91549431" />
+                                <g class="circle__text">
+                                    <text class="circle__percent" x="16.91549431" y="15.5" alignment-baseline="central"
+                                        text-anchor="middle" font-size="10" font-weight="600" fill="#E68B8C">86</text>
+                                </g>
+                            </svg>
+                            <p>You skin tonus points <br> <span>after 4 weeks</span> <br> with Skin Restart </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="featured">
+                <h3 class="featured__title">As featured in</h3>
+                <div class="featured__img">
+                    <img src="img/simply.png" alt="">
+                    <img src="img/glamour.png" alt="">
+                    <img src="img/sheknows.png" alt="">
+                    <img src="img/cosmopolitan.png" alt="">
+                </div>
+                <p class="featured__policy">According to your Policy, you can unsubscribe at any time.</p>
+            </div>
+
+            <div class="instruction">
+                <h3 class="instruction__title">Clear video instructions</h3>
+                <h3 class="instruction__subtitle">with step by step explanation</h3>
+
+                <div class="instruction__wrapper">
+                    <div class="instruction__video video">
+                        <video src="video/sr_1.mp4" poster="img/video-prev.png" class="video__player"
+                            preload="metadata">
+                        </video>
+                        <img class="video__play" src="img/play.png" alt="">
+                    </div>
+                    <div class="instruction__video video">
+                        <video src="video/sr_2.mp4" poster="img/video-prev_2.png" class="video__player"
+                            preload="metadata"></video>
+                        <img class="video__play" src="img/play.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="zone">
+                <h3 class="zone__title">Zone focused plans <span>to deal with:</span></h3>
+
+                <!-- <div class="zone__wrapper"> -->
+                <div class="zone__content content-zone">
+                    <div class="content-zone__grid grid-zone">
+                        <div class="grid-zone__item">
+                            <div class="grid-zone__img">
+                                <svg>
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <img src="img/zone_grid_1.png" alt="">
+                            </div>
+                            <p>Double chin</p>
+                        </div>
+                        <div class="grid-zone__item">
+                            <div class="grid-zone__img">
+                                <svg>
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <img src="img/zone_grid_2.png" alt="">
+                            </div>
+                            <p>Eyes lifting</p>
+                        </div>
+                        <div class="grid-zone__item">
+                            <div class="grid-zone__img">
+                                <svg>
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <img src="img/zone_grid_3.png" alt="">
+                            </div>
+                            <p>Puffiness</p>
+                        </div>
+                        <div class="grid-zone__item">
+                            <div class="grid-zone__img">
+                                <svg>
+                                    <use xlink:href="#check"></use>
+                                </svg>
+                                <img src="img/zone_grid_4.png" alt="">
+                            </div>
+                            <p><span>and many more!</span></p>
+                        </div>
+                    </div>
+                    <div class="content-zone__ui ui-zone">
+                        <button class="ui-zone__btn checkout-btn explore">
+                            <p>EXPLORE</p>
+                            <svg class="btn_arrow">
+                                <use xlink:href="#btn_arrow"></use>
+                            </svg>
+                        </button>
+                        <div class="ui-zone__item">
+                            <img src="img/zone_ico.png" alt="">
+                            <p>15+ video tutorials developed <br> <span>by our experts</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="zone__review review-zone">
+                        <img class="review-zone__quote" src="img/quote.png" alt="">
+                        <p class="review-zone__text">I've been using my program for 3 weeks, and I've almost erased
+                            my double chin!</p>
+                        <p class="review-zone__text">Thanx guys! It’s working!</p>
+                        <div class="review-zone__img">
+                            <img src="img/review_2.png" alt="">
+                        </div>
+                        <p class="review-zone__name">Amanda K.</p>
+                    </div> -->
+                <!-- </div> -->
+
+            </div>
+
+            <div id="leed" class="leed">
+                <h3 class="leed__title">Start your journey <span>to a perfect face today</span></h3>
+
+                <div class="leed__block block-leed">
+                    <div class="block-leed__header header-leed">
+                        <h3 class="block-leed__title">Special offer <span>SAVE 90%</span></h3>
+                        <!--  <p class="header-leed__title">Your offer expires in</p>
+                        <div class="header-leed__timer leed-timer">
+                            <div class="leed-timer__item">
+                                <div class="leed-min"></div>
+                                <p>minutes</p>
+                            </div>
+                            <span class="leed-timer__point">:</span>
+                            <div class="leed-timer__item">
+                                <div class="leed-sec"></div>
+                                <p>seconds</p>
+                            </div>
+                        </div>-->
+                    </div>
+
+
+                    <div class="block-leed__item item-leed">
+                        <div class="item-leed__plan plan-box">
+                            <svg class="rectangle">
+                                <use xlink:href="#rectangle"></use>
+                            </svg>
+                            <div class="plan-box__left">
+                                <p>7 - day trial</p>
+                            </div>
+                            <div class="plan-box__right">
+                                <div class="old-price">
+                                    <span class="currency">$</span><span class="price">9</span><span
+                                        class="cent">.99</span>
+                                </div>
+                                <div class="value">
+                                    <svg class="tag">
+                                        <use xlink:href="#tagS"></use>
+                                    </svg>
+                                    <div class="new-price">
+                                        <div>
+                                            <span class="currency">$</span><span class="price">0</span><span
+                                                class="cent">.99</span>
+                                        </div>
+                                        <span class="per">week</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="item-leed__plan plan-box">
+                            <svg class="rectangle">
+                                <use xlink:href="#rectangle"></use>
+                            </svg>
+                            <div class="plan-box__left">
+                                <p>After trial</p>
+                            </div>
+                            <div class="plan-box__right">
+                                <div class="value">
+                                    <svg class="tag">
+                                        <use xlink:href="#tagB"></use>
+                                    </svg>
+                                    <div class="new-price">
+                                        <div>
+                                            <span class="currency">$</span><span class="price">89</span><span
+                                                class="cent">.99</span>
+                                        </div>
+                                        <span class="per">2 months</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <button class="block-leed__btn checkout-btn open-payment">
+                        <p>SUBSCRIBE</p>
+                        <svg class="btn_arrow">
+                            <use xlink:href="#btn_arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="block-leed__privacy">
+                        *Your 7-day trial period is valid until 22.03.2022. You can cancel at any time before that date,
+                        and you will not be charged the full price of the program. No questions asked, no small print.
+                        If you don't cancel the subscription before 22.03.2022, you will be charged $89.99 per 2 months.
+                        We will automatically charge your card $89.99 per 2 months, and you will not lose access to your
+                        account. There are no refunds or offsets for incomplete months. You can cancel your subscription
+                        at any time online.
+                    </div>
+                </div>
+                <div id="info"></div>
+            </div>
+
+            <div class="functions">
+                <div class="functions__content content-functions">
+                    <h3 class="content-functions__title">Don’t forget to check our <br> <span>trial features</span></h3>
+
+                    <div class="big-functions">
+                        <h3 class="big-functions__title">Personal program</h3>
+                        <p class="big-functions__text">10+ basic workouts</p>
+                        <img class="big-functions__img" src="img/video-prev.png" alt="">
+                        <h3 class="big-functions__subtitle">First results in just <span>1 week</span></h3>
+                    </div>
+                    <div class="content-functions__small small-functions">
+                        <img class="small-functions__img" src="img/functions_ico.png" alt="">
+                        <h3 class="small-functions__title">10+ Affirmations</h3>
+                        <p class="small-functions__text">for happier and healthier you</p>
+                        <h3 class="small-functions__subtitle">Affirmations Calendar <br> <span>by Guru</span></h3>
+                    </div>
+                    <div class="content-functions__img first">
+                        <img class="girl" src="img/functions_1.png" alt="">
+                        <img class="arrow" src="img/functions_arrow_1.png" alt="">
+                    </div>
+                </div>
+                <div class="functions__content content-functions">
+                    <div class="content-functions__img second">
+                        <img class="girl" src="img/functions_2.png" alt="">
+                        <img class="arrow" src="img/functions_arrow_2.png" alt="">
+                    </div>
+                    <h3 class="content-functions__title">Unlock our premium features <br> <span>with full
+                            subscription</span>
+                    </h3>
+
+                    <div class="content-functions__big big-functions">
+                        <h3 class="big-functions__title">Premium program</h3>
+                        <p class="big-functions__text">15+ premium custom workouts</p>
+                        <img class="big-functions__img" src="img/video-prev.png" alt="">
+                        <h3 class="big-functions__subtitle">Track your progress with<span> <br> a timelapse of daily
+                                photos</span>
+                        </h3>
+                    </div>
+                    <div class="content-functions__small small-functions">
+                        <img class="small-functions__img" src="img/functions_ico_2.png" alt="">
+                        <div class="small-functions__item">
+                            <svg>
+                                <use xlink:href="#check"></use>
+                            </svg>
+                            <p>Face Guasha Massage Video Tutorial</p>
+                        </div>
+                        <div class="small-functions__item">
+                            <svg>
+                                <use xlink:href="#check"></use>
+                            </svg>
+                            <p>Great Posture workout</p>
+                        </div>
+                        <div class="small-functions__item">
+                            <svg>
+                                <use xlink:href="#check"></use>
+                            </svg>
+                            <p>Special Anti - Age Breathing Technique <br> <span>and many more benefits!</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="functions__btn checkout-btn scroll-btn">
+                <p>START MY TRIAL</p>
+                <svg class="btn_arrow">
+                    <use xlink:href="#btn_arrow"></use>
+                </svg>
+            </button>
+
+            <div class="ask">
+                <h3 class="ask__title">What people often ask</h3>
+
+                <div class="tabs-ask">
+                    <div class="tabs-ask__main main-ask">
+                        <div class="main-ask__title">
+                            <svg>
+                                <use xlink:href="#mark"></use>
+                            </svg>
+                            <p>What is Face Yoga?</p>
+                        </div>
+
+                        <svg class="main-ask__arrow">
+                            <use xlink:href="#arrow_down"></use>
+                        </svg>
+                    </div>
+                    <div class="tabs-ask__sub sub-ask">
+                        <p>Face yoga is a series of facial exercises intended to tone the muscles in the face. This is a
+                            non-injection method of maintaining facial beauty and reducing the signs of aging.
+                        </p>
+                    </div>
+                </div>
+                <div class="tabs-ask">
+                    <div class="tabs-ask__main main-ask">
+                        <div class="main-ask__title">
+                            <svg>
+                                <use xlink:href="#mark"></use>
+                            </svg>
+                            <p>What is a personal program?</p>
+                        </div>
+
+                        <svg class="main-ask__arrow">
+                            <use xlink:href="#arrow_down"></use>
+                        </svg>
+                    </div>
+                    <div class="tabs-ask__sub sub-ask">
+                        <p>Your personalized program consists of exercises aimed at maintaining and re-energizing your
+                            skin
+                            to help it look fresher. It has been adjusted for your age and for your needs to follow your
+                            problem areas.</p>
+                    </div>
+                </div>
+                <!-- <div class="tabs-ask">
+                    <div class="tabs-ask__main main-ask">
+                        <div class="main-ask__title">
+                            <svg>
+                                <use xlink:href="#mark"></use>
+                            </svg>
+                            <p>What are coins?</p>
+                        </div>
+
+                        <svg class="main-ask__arrow">
+                            <use xlink:href="#arrow_down"></use>
+                        </svg>
+                    </div>
+                    <div class="tabs-ask__sub sub-ask">
+                        <p>Coins are inner currency you may spend on additional Skin Restart goods and upgrades.
+                            E-books,
+                            check lists, trackers are just some of many features that will be available for purchase.
+                        </p>
+                    </div>
+                </div> -->
+                <div class="tabs-ask">
+                    <div class="tabs-ask__main main-ask">
+                        <div class="main-ask__title">
+                            <svg>
+                                <use xlink:href="#mark"></use>
+                            </svg>
+                            <p>When will I see the results?</p>
+                        </div>
+
+                        <svg class="main-ask__arrow">
+                            <use xlink:href="#arrow_down"></use>
+                        </svg>
+                    </div>
+                    <div class="tabs-ask__sub sub-ask">
+                        <p>Results depend on how often you practice. It can vary from person to person. You can start
+                            from 2
+                            minutes and increase it to 30 minutes per day. This way, you’ll definitely see and feel some
+                            results, even within two weeks. But for longer-lasting results, it can take up to 3 months.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feedback swiper">
+                <h3 class="feedback__title">Thank you for the feedback👇</h3>
+                <div class="swiper-wrapper">
+                    <div class="item-feedback swiper-slide">
+                        <img class="item-feedback__quote" src="img/quote.png" alt="">
+                        <p class="item-feedback__text">My smile lines suddenly became prominent after 40. I’ve been
+                            trying
+                            my plan and really like it! Just look at my before / after selfies, the difference is
+                            apparent!
+                        </p>
+                        <div class="item-feedback__img">
+                            <img src="img/feedback_1-1.png" alt="">
+                            <img src="img/feedback_1-2.png" alt="">
+                        </div>
+                        <p class="item-feedback__name">Olivia, 45 y.o.</p>
+                    </div>
+                    <div class="item-feedback swiper-slide">
+                        <img class="item-feedback__quote" src="img/quote.png" alt="">
+                        <p class="item-feedback__text">My program is amazing! My forehead wrinkles became less prominent
+                            and
+                            my jawline is more defined in just two weeks. It’s totally worth trying it out!</p>
+                        <div class="item-feedback__img">
+                            <img src="img/feedback_2-1.png" alt="">
+                            <img src="img/feedback_2-2.png" alt="">
+                        </div>
+                        <p class="item-feedback__name">Joanna, 35 y.o.</p>
+                    </div>
+                    <div class="item-feedback swiper-slide">
+                        <img class="item-feedback__quote" src="img/quote.png" alt="">
+                        <p class="item-feedback__text">I did a couple of injections before… but the results never lasted
+                            long, and it’s expensive. Now, I have more me-time. My favorite exercise is "A kiss"! It
+                            recharges me with positive vibes for the entire day. And yes, now I look at my face anew,
+                            it’s
+                            so beautiful!</p>
+                        <div class="item-feedback__img">
+                            <img src="img/feedback_3-1.png" alt="">
+                            <img src="img/feedback_3-2.png" alt="">
+                        </div>
+                        <p class="item-feedback__name">Amanda K.</p>
+                    </div>
+                    <div class="item-feedback swiper-slide">
+                        <img class="item-feedback__quote" src="img/quote.png" alt="">
+                        <p class="item-feedback__text">I love my plan and my new habis with it now. Morning puffiness is
+                            reduced and I see as my upper lids are lifted. A really nice course to buy</p>
+                        <div class="item-feedback__img">
+                            <img src="img/feedback_4-1.png" alt="">
+                            <img src="img/feedback_4-2.png" alt="">
+                        </div>
+                        <p class="item-feedback__name">Jenny M.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- <button class="feedback__btn checkout-btn scroll-btn">
+                    <p>CLAIM MY PLAN</p>
+                    <svg class="btn_arrow">
+                        <use xlink:href="#btn_arrow"></use>
+                    </svg>
+                </button> -->
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__left">
+                <p>2022 © Skin Restart</p>
+                <p>Support Team here:</p>
+                <a href="mailto:support@skinrestart.online">support@skinrestart.online</a>
+            </div>
+            <div class="footer__right">
+                <a target="_blank" href="pages/terms.html" onclick="dataLayer.push({ 
+                    'event' : 'terms_click',
+                    'category' : 'other',
+                    'action' : 'click',
+                    'label' : 'terms_click'
+                 });">Terms of Use</a>
+                <a target="_blank" href="pages/privacy.html" onclick="dataLayer.push({ 
+                    'event' : 'policy_click',
+                    'category' : 'other',
+                    'action' : 'click',
+                    'label' : 'policy_click'
+                 });">Privacy Policy</a>
+                <a target="_blank" href="pages/privacy.html" onclick="dataLayer.push({ 
+                    'event' : 'our_cookies',
+                    'category' : 'other',
+                    'action' : 'click',
+                    'label' : 'our_cookies'
+                 });">Our Cookies</a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal-bg"></div>
+    <div class="contact-popup">
+        <div class="contact-popup__wrapper">
+            <img src="img/logo.png" alt="" class="contact-popup__img">
+
+            <h2 class="contact-popup__title">Your personalized <br> plan is ready!</h2>
+            <div class="contact-popup__line"></div>
+            <p class="contact-popup__text">Share your email and discover how you can get <br> <span>a younger and more
+                    radiant look with Skin Restart</span></p>
+            <input class="contact-popup__input" type="email" name="email" id="email" placeholder="Your e-mail">
+            <button class="contact-popup__btn checkout-btn" disabled>
+                <p>GO TO MY PLAN</p>
+                <svg class="btn_arrow">
+                    <use xlink:href="#btn_arrow"></use>
+                </svg>
+            </button>
+
+            <div class="contact-popup__disclaimer">
+                <svg>
+                    <use xlink:href="#safe"></use>
+                </svg>
+                Your data is completely safe. We do not share personal information. By entering your email address, you
+                will
+                also be able to receive various offers from us. You can unsubscribe at any time.
+            </div>
+        </div>
+    </div>
+
+    <div class="payment-popup hidden">
+        <svg class="payment-popup__close">
+            <use xlink:href="#close"></use>
+        </svg>
+        <div class="payment-popup__wrapper">
+            <img src="img/logo.png" alt="" class="payment-popup__logo">
+
+            <h3 class="payment-popup__title">CHECKOUT</h3>
+            <p class="payment-popup__subtitle">enter your card details</p>
+
+            <div class="payment-popup__img">
+                <img src="img/visa.png" alt="">
+                <img src="img/mastercard.png" alt="">
+                <img src="img/maestro.png" alt="">
+            </div>
+
+            <div class="payment-popup__total">
+                <p>Total</p>
+                <div class="total-price">
+                    <span class="price">$0.99</span><span>/</span><span class="per_plan">week</span>
+                </div>
+            </div>
+
+            <div class="payment-popup__form form-payment">
+                <p class="form-payment__title">Card data</p>
+                <!-- <input type="tel" class="form-payment__input" id="card-inp" placeholder="**** **** **** ****"> -->
+                <div class="form-payment__input">
+                    <div id="card-element" style="padding: 20px 0;"></div>
+                </div>
+              
+                <div class="form-payment__wrapper">
+                    <div class="form-payment__date">
+                        <p class="form-payment__title">MM / YY</p>
+                        <!-- <input type="tel" class="small-inpit" id="date-inp" placeholder="**/**"> -->
+                        <div class="small-input">
+                            <div id="card-element2" style="padding: 20px 0;"></div>
+                        </div>
+                    </div>
+                    <div class="form-payment__cvc">
+                        <p class="form-payment__title">CVC/CVV</p>
+                        <!-- <input type="tel" class="small-inpit" id="cvc-inp" placeholder="***"> -->
+                        <div class="small-input">
+                            <div id="card-element3" style="padding: 20px 0;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-errors" style="height: 20px;"></div>
+                <p class="form-payment__title">Name on card</p>
+                <input type="text" class="form-payment__input" id="name-inp" placeholder="Amile Watson">
+                <div id="payment-request-button-apple"></div>
+                <div id="payment-request-button"></div>
+                <button class="form-payment__btn checkout-btn">
+                    <p>Proceed</p>
+                    <svg class="btn_arrow">
+                        <use xlink:href="#btn_arrow"></use>
+                    </svg>
+                </button>
+                <div class="lds-dual-ring"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="leave-popup hidden">
+        <svg class="leave-popup__close">
+            <use xlink:href="#close"></use>
+        </svg>
+
+        <div class="leave-popup__top top-leave">
+            <img src="img/leave.png" alt="" class="top-leave__img">
+
+            <div class="top-leave__info info-leave">
+                <h1 class="info-leave__title">SPECIAL OFFER</h1>
+                <h2 class="info-leave__subtitle">JUST FOR YOU <span>60% OFF</span>
+                    <svg>
+                        <use xlink:href="#sale"></use>
+                    </svg></h2>
+                <p class="info-leave__text">A skin of your dreams with <br> a personalized Skin Restart plan!</p>
+
+                <div class="info-leave__prices">
+                    <div class="price_old">
+                        <span class="currency">$</span><span class="price">89</span><span class="cent">.99</span>
+                        <span class="per">/2 months</span>
+                    </div>
+                    <div class="price_new">
+                        <svg class="price_new__tag">
+                            <use xlink:href="#tagB"></use>
+                        </svg>
+                        <span class="currency">$</span><span class="price">59</span><span class="cent">.99</span>
+                        <span class="per">/2 months</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="leave-popup__review review-leave">
+            <img class="review-leave__quote" src="img/quote.png" alt="">
+            <p class="review-leave__text">I had troubles dealing with wrinkles around the eyes, couldn’t afford Botox
+                injections so was looking for alternative methods. This plan caught my attention with a price almost two
+                times lower than other similar programs. I decided to try it and was lucky to get a personal discount.
+                Was
+                not disappointed by the results. </p>
+            <div class="review-leave__img">
+                <img src="img/review_3.png" alt="">
+            </div>
+            <p class="review-leave__name">Rachel Campion</p>
+        </div>
+
+        <button class="leave-popup__btn">
+            <p>ACTIVATE MY OFFER</p>
+        </button>
+    </div>
+
+    <div class="thanks-bg hidden"></div>
+
+    <div class="thanks-popup hidden">
+        <svg class="thanks-popup__img">
+            <use xlink:href="#done"></use>
+        </svg>
+
+        <h1 class="thanks-popup__title">Thank you!</h1>
+        <h2 class="thanks-popup__subtitle">Payment is successful.</h2>
+        <p class="thanks-popup__text">Please, check your email and follow our instruction.</p>
+
+        <button class="thanks-popup__btn checkout-btn">
+            <p>GOT IT</p>
+            <svg class="btn_arrow">
+                <use xlink:href="#btn_arrow"></use>
+            </svg>
+        </button>
+    </div>
+
+    <script src="js/checkout.js"></script>
+    <script src="js/smoth-scroll.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <svg style="display: none;">
+        <symbol id="btn_arrow" viewBox="0 0 65 20">
+            <path
+                d="M20.6305 11C20.0782 11 19.6305 11.4477 19.6305 12C19.6305 12.5523 20.0782 13 20.6305 13V11ZM63.0767 12.7071C63.4673 12.3166 63.4673 11.6834 63.0767 11.2929L56.7128 4.92893C56.3222 4.53841 55.6891 4.53841 55.2986 4.92893C54.908 5.31946 54.908 5.95262 55.2986 6.34315L60.9554 12L55.2986 17.6569C54.908 18.0474 54.908 18.6805 55.2986 19.0711C55.6891 19.4616 56.3222 19.4616 56.7128 19.0711L63.0767 12.7071ZM20.6305 13H62.3696V11H20.6305V13Z"
+                fill="white" />
+        </symbol>
+        <symbol id="safe" viewBox="0 0 16 18">
+            <path
+                d="M4.95772 1.78875C3.86925 2.08404 2.78817 2.40514 1.71543 2.75175C1.61748 2.78298 1.5304 2.84067 1.46413 2.91824C1.39786 2.99581 1.35505 3.09015 1.34058 3.1905C0.707434 7.86713 2.17029 11.2793 3.91543 13.527C4.65431 14.4882 5.53532 15.335 6.52914 16.0391C6.92457 16.3136 7.27429 16.5116 7.54971 16.6388C7.68686 16.7029 7.79886 16.7456 7.88457 16.7715C7.92206 16.7844 7.96071 16.7939 8 16.7996C8.03883 16.7934 8.07706 16.784 8.11429 16.7715C8.20114 16.7456 8.31314 16.7029 8.45028 16.6388C8.72457 16.5116 9.07543 16.3125 9.47086 16.0391C10.4647 15.335 11.3457 14.4882 12.0846 13.527C13.8297 11.2804 15.2926 7.86713 14.6594 3.1905C14.6451 3.0901 14.6023 2.99571 14.536 2.91811C14.4697 2.84052 14.3826 2.78287 14.2846 2.75175C13.5406 2.51213 12.2846 2.12175 11.0423 1.78987C9.77371 1.45125 8.60686 1.20038 8 1.20038C7.39429 1.20038 6.22629 1.45125 4.95772 1.78987V1.78875ZM4.65372 0.63C5.89372 0.298125 7.21143 0 8 0C8.78857 0 10.1063 0.298125 11.3463 0.63C12.6149 0.9675 13.8937 1.36687 14.6457 1.60875C14.9601 1.71096 15.2389 1.8984 15.4499 2.14954C15.661 2.40068 15.7958 2.70533 15.8389 3.0285C16.52 8.06513 14.9394 11.7979 13.0217 14.2673C12.2085 15.3236 11.2388 16.2538 10.1451 17.0269C9.76696 17.2944 9.36627 17.5296 8.94743 17.73C8.62743 17.8785 8.28343 18 8 18C7.71657 18 7.37371 17.8785 7.05257 17.73C6.63373 17.5296 6.23304 17.2944 5.85486 17.0269C4.76118 16.2538 3.79153 15.3236 2.97829 14.2673C1.06058 11.7979 -0.519993 8.06513 0.161149 3.0285C0.20422 2.70533 0.339027 2.40068 0.550082 2.14954C0.761138 1.8984 1.03988 1.71096 1.35429 1.60875C2.44594 1.25641 3.54607 0.930065 4.65372 0.63Z"
+                fill="#F5B9B2" />
+            <path
+                d="M11.2617 5.79026C11.3149 5.84251 11.3572 5.90458 11.386 5.97292C11.4148 6.04126 11.4296 6.11452 11.4296 6.18851C11.4296 6.26249 11.4148 6.33575 11.386 6.40409C11.3572 6.47243 11.3149 6.5345 11.2617 6.58676L7.83316 9.96176C7.78008 10.0141 7.71702 10.0557 7.6476 10.0841C7.57817 10.1124 7.50375 10.127 7.42859 10.127C7.35342 10.127 7.279 10.1124 7.20958 10.0841C7.14015 10.0557 7.0771 10.0141 7.02401 9.96176L5.30973 8.27426C5.2566 8.22196 5.21446 8.15987 5.1857 8.09154C5.15695 8.02321 5.14215 7.94997 5.14215 7.87601C5.14215 7.80204 5.15695 7.72881 5.1857 7.66047C5.21446 7.59214 5.2566 7.53005 5.30973 7.47776C5.36286 7.42546 5.42593 7.38397 5.49535 7.35567C5.56476 7.32736 5.63917 7.31279 5.7143 7.31279C5.78944 7.31279 5.86384 7.32736 5.93325 7.35567C6.00267 7.38397 6.06574 7.42546 6.11887 7.47776L7.42859 8.76813L10.4526 5.79026C10.5057 5.73787 10.5687 5.69631 10.6381 5.66795C10.7076 5.6396 10.782 5.625 10.8572 5.625C10.9323 5.625 11.0067 5.6396 11.0762 5.66795C11.1456 5.69631 11.2086 5.73787 11.2617 5.79026Z"
+                fill="#F5B9B2" />
+        </symbol>
+        <symbol id="close" viewBox="0 0 24 24">
+            <path
+                d="M13.4099 12.0002L17.7099 7.71019C17.8982 7.52188 18.004 7.26649 18.004 7.00019C18.004 6.73388 17.8982 6.47849 17.7099 6.29019C17.5216 6.10188 17.2662 5.99609 16.9999 5.99609C16.7336 5.99609 16.4782 6.10188 16.2899 6.29019L11.9999 10.5902L7.70994 6.29019C7.52164 6.10188 7.26624 5.99609 6.99994 5.99609C6.73364 5.99609 6.47824 6.10188 6.28994 6.29019C6.10164 6.47849 5.99585 6.73388 5.99585 7.00019C5.99585 7.26649 6.10164 7.52188 6.28994 7.71019L10.5899 12.0002L6.28994 16.2902C6.19621 16.3831 6.12182 16.4937 6.07105 16.6156C6.02028 16.7375 5.99414 16.8682 5.99414 17.0002C5.99414 17.1322 6.02028 17.2629 6.07105 17.3848C6.12182 17.5066 6.19621 17.6172 6.28994 17.7102C6.3829 17.8039 6.4935 17.8783 6.61536 17.9291C6.73722 17.9798 6.86793 18.006 6.99994 18.006C7.13195 18.006 7.26266 17.9798 7.38452 17.9291C7.50638 17.8783 7.61698 17.8039 7.70994 17.7102L11.9999 13.4102L16.2899 17.7102C16.3829 17.8039 16.4935 17.8783 16.6154 17.9291C16.7372 17.9798 16.8679 18.006 16.9999 18.006C17.132 18.006 17.2627 17.9798 17.3845 17.9291C17.5064 17.8783 17.617 17.8039 17.7099 17.7102C17.8037 17.6172 17.8781 17.5066 17.9288 17.3848C17.9796 17.2629 18.0057 17.1322 18.0057 17.0002C18.0057 16.8682 17.9796 16.7375 17.9288 16.6156C17.8781 16.4937 17.8037 16.3831 17.7099 16.2902L13.4099 12.0002Z" />
+        </symbol>
+        <symbol id="done" viewBox="0 0 74 69">
+            <path
+                d="M38.8987 67.5878C47.4538 66.2408 54.5375 62.2361 59.9684 55.683C63.0381 51.9696 65.2358 47.9103 66.4891 43.578C67.7061 39.4277 68.0875 34.9316 67.6334 30.1988C66.7797 31.0543 65.9261 31.8917 65.0905 32.7472C63.8917 33.9486 62.6748 35.1682 61.4578 36.3878C61.2217 36.6245 61.1127 36.8611 61.0764 37.2252C60.7495 40.5745 59.8231 43.669 58.3155 46.3995C52.8847 56.2473 44.6021 61.2531 33.6495 61.3077H33.5223C26.6929 61.3077 20.5899 58.8867 15.3951 54.1357C7.02176 46.4905 4.24274 34.3673 8.49301 23.9734C10.5273 18.9493 13.488 14.9265 17.2842 12.0504C21.0803 9.15611 25.7302 7.37222 31.1066 6.73511C32.1964 6.60769 33.2862 6.53488 34.3579 6.53488C40.043 6.53488 45.3468 8.33698 50.142 11.8866C50.2691 11.9776 50.3418 12.014 50.3781 12.0322C50.4144 12.014 50.4689 11.9776 50.5597 11.8866C51.9765 10.4121 53.4477 8.93768 54.9371 7.49964C54.9916 7.46323 55.028 7.40862 55.0461 7.39042C55.0098 7.35402 54.9735 7.31761 54.9008 7.2812C48.5799 2.45741 41.6233 0 34.2126 0C32.3962 0 30.5254 0.145624 28.6545 0.436872C21.0258 1.60186 13.9784 5.40629 8.78362 11.1402C6.2044 13.9981 4.15193 17.2382 2.66252 20.7878C1.11862 24.4466 0.246769 28.3421 0.0469706 32.365C-0.279973 38.736 1.10046 44.743 4.17009 50.2039C6.76747 54.8275 10.0551 58.6137 13.9602 61.4716C17.8654 64.3112 22.4789 66.2954 27.6737 67.3693C28.5819 67.5514 29.49 67.6424 30.4527 67.7516C31.1792 67.8244 31.9421 67.8972 32.6868 68.0247H35.1207C35.5203 67.9882 35.9199 67.9336 36.3014 67.8972C37.1732 67.8062 38.0451 67.7152 38.8987 67.5878Z"
+                fill="#F6EAEB" />
+            <path
+                d="M71.2299 13.3234C69.2137 11.3211 67.2157 9.31873 65.1996 7.3164C65.0179 7.13437 64.8545 6.97055 64.7273 6.86133C64.6002 6.97055 64.4367 7.13437 64.2914 7.2982L59.4781 12.122C52.1037 19.476 44.5113 27.0849 37.0643 34.5845C36.7373 34.9122 36.3559 35.2398 35.8292 35.2398C35.3024 35.2398 34.9028 34.894 34.6122 34.6027C31.8695 31.8177 29.0542 28.9962 26.3296 26.2657C25.4396 25.3738 24.5678 24.5 23.6778 23.6081C23.5688 23.4989 23.4416 23.3715 23.3327 23.2804C23.2418 23.3715 23.1329 23.4807 23.0239 23.5899C22.3155 24.2998 21.6071 25.0097 20.8987 25.7196C19.0461 27.5764 17.1571 29.4877 15.2499 31.3262C15.0864 31.49 15.0138 31.581 14.9956 31.6174C15.0319 31.672 15.0864 31.763 15.2499 31.9269C20.4992 37.1511 25.8211 42.4846 30.9613 47.6361C32.4508 49.1287 33.9402 50.6214 35.4477 52.1322C35.593 52.2778 35.7747 52.4599 35.8837 52.5509C35.9926 52.4417 36.1561 52.296 36.3014 52.1504L43.3125 45.124C53.0845 35.349 62.8383 25.5558 72.6103 15.7808C72.7919 15.5988 72.9736 15.4349 73.1552 15.2711L71.2299 13.3234Z"
+                fill="#F5B9B2" />
+        </symbol>
+        <symbol id="check" viewBox="0 0 16 16">
+            <path
+                d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM12.03 4.97C11.9586 4.89882 11.8735 4.84277 11.7799 4.80522C11.6863 4.76766 11.5861 4.74936 11.4853 4.75141C11.3845 4.75347 11.2851 4.77583 11.1932 4.81717C11.1012 4.85851 11.0185 4.91797 10.95 4.992L7.477 9.417L5.384 7.323C5.24183 7.19052 5.05378 7.1184 4.85948 7.12183C4.66518 7.12525 4.47979 7.20397 4.34238 7.34138C4.20497 7.47879 4.12625 7.66418 4.12283 7.85848C4.1194 8.05278 4.19152 8.24083 4.324 8.383L6.97 11.03C7.04128 11.1012 7.12616 11.1572 7.21958 11.1949C7.313 11.2325 7.41305 11.2509 7.51375 11.2491C7.61444 11.2472 7.71374 11.2251 7.8057 11.184C7.89766 11.1429 7.9804 11.0837 8.049 11.01L12.041 6.02C12.1771 5.8785 12.2523 5.68928 12.2504 5.49296C12.2485 5.29664 12.1698 5.10888 12.031 4.97H12.03Z"
+                fill="#FF9B9C" />
+        </symbol>
+        <symbol id="star" viewBox="0 0 15 15">
+            <path
+                d="M14.1217 5.70968L9.80111 5.08176L7.8697 1.16619C7.81695 1.05898 7.73016 0.972195 7.62295 0.919443C7.35409 0.786712 7.02736 0.897321 6.89293 1.16619L4.96152 5.08176L0.640943 5.70968C0.521826 5.7267 0.412918 5.78285 0.329535 5.86794C0.22873 5.97155 0.173182 6.11094 0.175097 6.25548C0.177011 6.40003 0.236232 6.5379 0.339745 6.6388L3.46574 9.68651L2.72721 13.9901C2.70989 14.0902 2.72097 14.1931 2.75919 14.2873C2.79741 14.3814 2.86124 14.463 2.94344 14.5227C3.02564 14.5824 3.12293 14.6178 3.22427 14.6251C3.32561 14.6323 3.42695 14.611 3.51679 14.5635L7.38132 12.5317L11.2458 14.5635C11.3513 14.6197 11.4739 14.6384 11.5913 14.618C11.8874 14.5669 12.0865 14.2862 12.0354 13.9901L11.2969 9.68651L14.4229 6.6388C14.508 6.55542 14.5641 6.44651 14.5811 6.32739C14.6271 6.0296 14.4195 5.75393 14.1217 5.70968Z"
+                fill="#F8D379" />
+        </symbol>
+        <symbol id="mark" viewBox="0 0 35 36">
+            <path
+                d="M34.875 17.7812C34.875 27.4139 27.0673 35.2188 17.4375 35.2188C7.80771 35.2188 0 27.4139 0 17.7812C0 8.15427 7.80771 0.34375 17.4375 0.34375C27.0673 0.34375 34.875 8.15427 34.875 17.7812ZM17.9054 6.10938C14.0736 6.10938 11.6297 7.72354 9.71058 10.5924C9.46195 10.964 9.54513 11.4653 9.90148 11.7355L12.3413 13.5854C12.7072 13.8629 13.2287 13.7969 13.513 13.4362C14.7691 11.8431 15.6303 10.9192 17.5421 10.9192C18.9785 10.9192 20.7553 11.8437 20.7553 13.2366C20.7553 14.2896 19.886 14.8304 18.4677 15.6255C16.8137 16.5527 14.625 17.7068 14.625 20.5938V20.875C14.625 21.341 15.0028 21.7188 15.4688 21.7188H19.4062C19.8722 21.7188 20.25 21.341 20.25 20.875V20.7813C20.25 18.78 26.099 18.6967 26.099 13.2812C26.099 9.20298 21.8687 6.10938 17.9054 6.10938ZM17.4375 23.5469C15.654 23.5469 14.2031 24.9978 14.2031 26.7812C14.2031 28.5647 15.654 30.0156 17.4375 30.0156C19.221 30.0156 20.6719 28.5647 20.6719 26.7812C20.6719 24.9978 19.221 23.5469 17.4375 23.5469Z"
+                fill="#BBCDE2" />
+        </symbol>
+        <symbol id="arrow_down" viewBox="0 0 29 18">
+            <path d="M3 3.33203L14.3333 14.6654L25.6667 3.33203" stroke="#BBCCE2" fill="#fff" stroke-width="5"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <!-- fill="#E7EDF5" -->
+        <symbol id="tagS" viewBox="0 0 67 40">
+            <path
+                d="M0.75 3C0.75 1.34315 2.09315 0 3.75 0H55.8338C57.0022 0 58.0644 0.678447 58.5557 1.73862L66.6505 19.2064C67.0299 20.0249 67.0207 20.9707 66.6256 21.7817L58.5714 38.3139C58.0689 39.3455 57.0219 40 55.8745 40H3.75C2.09314 40 0.75 38.6569 0.75 37V3Z" />
+        </symbol>
+        <symbol id="tagB" viewBox="0 0 80 40">
+            <path
+                d="M0.75 3C0.75 1.34315 2.09315 0 3.75 0H68.8338C70.0023 0 71.0644 0.678447 71.5557 1.73862L79.6505 19.2064C80.0299 20.0249 80.0207 20.9707 79.6256 21.7817L71.5714 38.3139C71.0689 39.3455 70.0219 40 68.8745 40H3.75C2.09315 40 0.75 38.6569 0.75 37V3Z" />
+        </symbol>
+        <!-- fill="#FCE8B7" -->
+        <symbol id="rectangle" viewBox="0 0 254 59">
+            <path
+                d="M1.25 10C1.25 4.7533 5.50329 0.5 10.75 0.5H235.915C239.83 0.5 243.345 2.9018 244.767 6.54952L252.368 26.0495C253.233 28.2685 253.233 30.7315 252.368 32.9505L244.767 52.4505C243.345 56.0982 239.83 58.5 235.915 58.5H10.75C5.50329 58.5 1.25 54.2467 1.25 49V10Z" />
+        </symbol>
+        <!--  fill="#FAFBFE" stroke="#BBCCE2" -->
+        <symbol id="sale" viewBox="0 0 30 32">
+            <g clip-path="url(#clip0_201_9454)">
+                <path
+                    d="M14.4504 31.9991C13.6412 31.7801 13.0458 31.2326 12.4809 30.6459C12.0992 30.247 11.6947 29.8637 11.3053 29.4648C11.0229 29.1754 10.7023 29.0502 10.2824 29.1206C9.43511 29.2693 8.57252 29.3709 7.72519 29.4883C6.27481 29.6916 4.9313 28.5809 4.67939 26.9852C4.55725 26.2187 4.41221 25.4521 4.29008 24.6777C4.22137 24.2397 4 23.9424 3.61832 23.7469C2.92367 23.3792 2.22901 23.0038 1.54199 22.6205C0.564887 22.073 0.0229025 21.236 -0.00763184 20.0862C-0.0152654 19.609 0.122139 19.1632 0.328246 18.7408C0.671757 18.0211 1.00763 17.2937 1.35878 16.5819C1.54962 16.1986 1.54962 15.831 1.35878 15.4477C1.00763 14.7437 0.679391 14.0319 0.343513 13.3201C-0.404578 11.74 0.0839711 10.2069 1.58779 9.37778C2.23664 9.01797 2.8855 8.65033 3.55725 8.31398C4.01527 8.08715 4.23664 7.73515 4.31298 7.22672C4.45802 6.32718 4.56489 5.412 4.80153 4.52811C5.14504 3.23748 6.45038 2.36141 7.74809 2.53349C8.59542 2.65082 9.44275 2.75251 10.2824 2.89331C10.6947 2.9637 11.0153 2.84637 11.3053 2.55696C11.8321 2.03288 12.3664 1.50098 12.8931 0.969082C13.5191 0.343318 14.2443 -0.0556065 15.1527 -0.000852153C15.687 0.030436 16.1679 0.194699 16.5954 0.531047C17.3206 1.10206 17.9389 1.80604 18.5878 2.45527C18.9389 2.80726 19.3053 2.98717 19.8168 2.88548C20.5878 2.74469 21.3664 2.67429 22.1374 2.54914C23.5725 2.31447 25.0534 3.26094 25.3206 5.00526C25.4427 5.77182 25.5878 6.53838 25.7023 7.31276C25.771 7.76644 25.9924 8.06368 26.3893 8.27487C27.084 8.63469 27.7786 9.01797 28.4656 9.40125C29.4427 9.94879 29.9847 10.7858 30.0076 11.9434C30.0153 12.4206 29.8779 12.8664 29.6717 13.2888C29.3282 14.0084 28.9924 14.7359 28.6412 15.4477C28.4504 15.831 28.458 16.1986 28.6412 16.5819C28.9924 17.2937 29.3359 18.0211 29.6717 18.7408C30.3893 20.2739 29.916 21.807 28.458 22.6283C27.8015 22.996 27.1374 23.3714 26.4656 23.7078C25.9847 23.9424 25.7634 24.3101 25.6794 24.842C25.542 25.7259 25.4351 26.6098 25.2061 27.478C24.855 28.7921 23.5649 29.676 22.2519 29.4961C21.3664 29.3709 20.4809 29.2458 19.603 29.1206C19.2443 29.0659 18.9695 29.2145 18.7252 29.457C18.3206 29.8559 17.916 30.247 17.5267 30.6616C16.9618 31.2561 16.3664 31.7958 15.5573 32.0148C15.1832 31.9991 14.8168 31.9991 14.4504 31.9991ZM22.5572 27.6032C22.9924 27.6188 23.3588 27.2825 23.4504 26.7662C23.5954 25.9449 23.7481 25.1314 23.8779 24.3101C24.0305 23.3245 24.5267 22.597 25.3893 22.1355C26.0916 21.7523 26.7939 21.3768 27.4885 20.9935C28.1603 20.6181 28.2977 20.2035 27.9618 19.4995C27.6565 18.8425 27.3511 18.1854 27.0153 17.544C26.4885 16.5271 26.4885 15.5181 27.0076 14.5012C27.3359 13.8598 27.6412 13.1949 27.9542 12.5457C28.2977 11.8261 28.1679 11.4115 27.4733 11.0282C26.7786 10.645 26.0763 10.2695 25.374 9.88622C24.5267 9.42472 24.0382 8.70509 23.8855 7.73515C23.7557 6.91384 23.6107 6.10035 23.458 5.27903C23.3511 4.66109 22.9466 4.37167 22.3435 4.46554C21.6031 4.57505 20.855 4.66109 20.1145 4.79406C19.0382 4.98179 18.1298 4.70802 17.3664 3.90235C16.855 3.37045 16.3206 2.8542 15.7939 2.33794C15.2214 1.77475 14.7863 1.77475 14.2137 2.33794C13.6183 2.92459 13.0382 3.51125 12.4351 4.09008C11.8244 4.67673 11.084 4.93486 10.2519 4.83317C9.38931 4.73149 8.52672 4.59069 7.66412 4.46554C7.06107 4.37949 6.66412 4.66109 6.54962 5.27903C6.40458 6.0847 6.25191 6.89037 6.12977 7.70386C5.9771 8.71291 5.46565 9.44818 4.58015 9.9175C3.8855 10.2851 3.19847 10.6606 2.51145 11.0439C1.85496 11.4115 1.71756 11.8261 2.0458 12.5144C2.35878 13.1793 2.67176 13.8442 3 14.5012C3.52672 15.5181 3.51908 16.5271 2.99237 17.544C2.64122 18.2245 2.31298 18.9207 2 19.6168C1.74046 20.1879 1.8855 20.6102 2.41221 20.931C2.52672 21.0013 2.64122 21.0639 2.76336 21.1265C3.30534 21.4159 3.83206 21.7288 4.38168 22.0026C5.47328 22.5345 6.03817 23.4105 6.19084 24.623C6.28244 25.3582 6.42748 26.0779 6.55725 26.8053C6.65649 27.3372 7.07634 27.6657 7.55725 27.5953C8.31298 27.4858 9.0687 27.392 9.81679 27.259C10.9084 27.0634 11.8473 27.3137 12.6336 28.1272C13.1527 28.6591 13.6794 29.1754 14.2061 29.6916C14.7939 30.2705 15.2214 30.2705 15.8092 29.6916C16.3893 29.1206 16.9542 28.5418 17.542 27.9786C18.2061 27.3372 18.9924 27.0869 19.8931 27.2277C20.771 27.3528 21.6565 27.4702 22.5572 27.6032Z"
+                    fill="#E68B8C" />
+                <path
+                    d="M9.06872 23.042C8.72521 23.0263 8.43513 22.8933 8.25956 22.5726C8.08398 22.2597 8.07635 21.9312 8.25956 21.6183C8.34353 21.4775 8.45803 21.3524 8.57253 21.2351C12.4199 17.2927 16.2672 13.3426 20.1222 9.40029C20.1985 9.32207 20.2825 9.23603 20.3664 9.16563C20.7481 8.86839 21.2672 8.89968 21.5954 9.22821C21.9313 9.56455 21.9618 10.1121 21.6641 10.511C21.5954 10.6049 21.5115 10.6831 21.4351 10.7613C17.5878 14.7036 13.7405 18.646 9.89315 22.5961C9.6565 22.8464 9.41986 23.0498 9.06872 23.042Z"
+                    fill="#E68B8C" />
+                <path
+                    d="M14.7176 11.0979C14.7176 12.9752 13.1985 14.5318 11.3893 14.5162C9.58017 14.5084 8.05345 12.9283 8.06872 11.0745C8.08398 9.19719 9.5878 7.67971 11.4275 7.68753C13.2519 7.69535 14.7176 9.22065 14.7176 11.0979ZM11.3664 12.5763C12.1909 12.592 12.8397 11.9662 12.855 11.1371C12.8702 10.2923 12.229 9.60393 11.4199 9.59611C10.6183 9.58829 9.96185 10.2453 9.95421 11.0667C9.93895 11.9114 10.5496 12.5607 11.3664 12.5763Z"
+                    fill="#E68B8C" />
+                <path
+                    d="M15.2825 20.9143C15.2825 19.0527 16.7863 17.5118 18.5878 17.5039C20.4046 17.4961 21.9619 19.0996 21.9313 20.9535C21.9008 22.8464 20.4199 24.3404 18.5649 24.3326C16.7481 24.3326 15.2825 22.7995 15.2825 20.9143ZM20.0458 20.9456C20.0535 20.1009 19.4428 19.4594 18.6183 19.4516C17.7939 19.4438 17.1527 20.0774 17.1451 20.9065C17.1374 21.7513 17.7863 22.4318 18.5954 22.4318C19.397 22.424 20.0458 21.7669 20.0458 20.9456Z"
+                    fill="#E68B8C" />
+            </g>
+            <defs>
+                <clipPath id="clip0_201_9454">
+                    <rect width="30" height="32" fill="white" />
+                </clipPath>
+            </defs>
+        </symbol>
+    </svg>
+</body>
+
+</html>
